@@ -115,7 +115,7 @@ const AboutPage = () => (
                         <div className={"item"}>
                             <Icon.Moon className={"item-icon"} />
                             <h3>Dark Mode.</h3>
-                            <p>Protect your eyes and switch Ferdi to dark mode in the night. This also works with selected services.</p>
+                            <p>Protect your eyes and switch Ferdi to dark mode in the night. This also works all your services thanks to <a href="https://github.com/darkreader/darkreader" target="_blank">DarkReader</a>.</p>
                         </div>
                     </div>
 
