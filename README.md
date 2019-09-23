@@ -4,6 +4,8 @@
 
 Website for Ferdi, displaying its features.
 
+Build with GatsbyJS, based on [HiStaff's website-static template](https://github.com/histaff/website-static).
+
 ## Usage
 1. Install the [GatsbyJS CLI](https://www.gatsbyjs.org/docs/gatsby-cli/)
 2. Build the page
