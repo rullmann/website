@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from 'gatsby'
+import * as Icon from 'react-feather';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -109,6 +110,37 @@ const IndexPage = () => (
                     <Link to="/download">Download</Link>
                 </div>
             </div>
+        </div>
+
+        <div className={"support"}>
+            <div>
+                <div className={"call-to-action__content"}>
+                    <p>Do you like Ferdi? Spread the love!</p>
+                </div>
+
+                <div className={"actions"}>
+                    <div className={"button"}>
+                        <a href="https://github.com/getferdi/ferdi">
+                            <Icon.Star />
+                            Star on GitHub
+                        </a>
+                    </div>
+                    <div className={"button"}>
+                        <a href="https://twitter.com/intent/tweet?text=Ferdi%3A%20A%20messaging%20browser%20that%20allows%20you%20to%20combine%20your%20favourite%20messaging%20services%20into%20one%20application.%0A%0ACheck%20out%20Ferdi%20at%20https%3A//getferdi.com">
+                            <Icon.ThumbsUp />
+                            Tell your Friends
+                        </a>
+                    </div>
+                    <div className={"button"}>
+                        <a href="https://opencollective.com/getferdi">
+                            <Icon.CreditCard />
+                            Support our Open Collective
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+                
         </div>
     </Layout>
 )

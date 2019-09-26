@@ -52,6 +52,7 @@ const Layout = ({children}) => (
                                         <li><Link to="/download" title={"Download"}>Download</Link></li>
                                         <li><Link to="/features" title={"Features"}>Features</Link></li>
                                         <li><a href={"https://github.com/getferdi/ferdi"}>Open Source</a></li>
+                                        <li><a href={"https://opencollective.com/getferdi"}>Open Collective</a></li>
                                     </ul>
                                 </ul>
                             </div>
