@@ -14,8 +14,9 @@ class DownloadPage extends Component {
         os: '',
     }
 
-    async componentDidMount() {
-        const version = await this.getLatestRelease();
+    componentDidMount() {
+        // const version = await this.getLatestRelease();
+        const version = '5.3.3';
         const os = this.getOS();
 
         this.setState({
