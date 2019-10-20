@@ -55,9 +55,27 @@ const AboutPage = () => (
                 <div className={"row"}>
                     <div className={"col-6"}>
                         <div className={"item"}>
+                            <Icon.CloudOff className={"item-icon"} />
+                            <h3>No login required.</h3>
+                            <p>With Ferdi you can choose between logging in to your Ferdi account to sync your services between devices or using Ferdi without an account so your data doesn't get send to external servers.</p>
+                        </div>
+                    </div>
+
+                    <div className={"col-6"}>
+                        <div className={"item"}>
                             <Icon.HardDrive className={"item-icon"} />
                             <h3>Custom Servers.</h3>
                             <p>Don't want to trust third-parties to store your information. With Ferdi, you can <a href="http://server.getferdi.com" target="_blank" rel="noopener noreferrer">set up your own Server</a> - minimal hardware and knowledge required.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={"row"}>
+                    <div className={"col-6"}>
+                        <div className={"item"}>
+                            <Icon.PauseCircle className={"item-icon"} />
+                            <h3>Service Hibernation.</h3>
+                            <p>By default, Ferdi will keep your services loaded in the background - this can use a lot of resources. If you want to, you can enable service hibernation in Ferdi's settings. This will automatically unload unused services to keep your computer running fast.</p>
                         </div>
                     </div>
 
