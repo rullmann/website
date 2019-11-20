@@ -65,7 +65,7 @@ const AboutPage = () => (
                         <div className={"item"}>
                             <Icon.HardDrive className={"item-icon"} />
                             <h3>Custom Servers.</h3>
-                            <p>Don't want to trust third-parties to store your information. With Ferdi, you can <a href="http://server.getferdi.com" target="_blank" rel="noopener noreferrer">set up your own Server</a> - minimal hardware and knowledge required.</p>
+                            <p>Don't want to trust third-parties to store your information? With Ferdi, you can <a href="http://server.getferdi.com" target="_blank" rel="noopener noreferrer">set up your own Server</a> - minimal hardware and knowledge required.</p>
                         </div>
                     </div>
                 </div>
