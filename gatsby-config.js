@@ -1,8 +1,9 @@
 module.exports = {
     siteMetadata: {
-        title: `Ferdi`,
-        description: `All your messages in one place`,
+        title: `Ferdi Messenger`,
+        description: `All your messaging services in one place`,
         author: `@vantezzen`,
+        image: `https://repository-images.githubusercontent.com/169383267/0190e000-f2cd-11e9-85ca-66f5ab21e57a`
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
