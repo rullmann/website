@@ -12,10 +12,10 @@ import thumbnailMore from "../../static/images/feature-more.png"
 
 const IndexPage = () => (
     <Layout>
-        <SEO title="Ferdi: All your services in one place"/>
+        <SEO title="Ferdi: All your messaging services in one place"/>
 
         <div className={"page-header home"}>
-            <h1>All your services in one place</h1>
+            <h1>All your messaging services in one place</h1>
             <p>Ferdi is a messaging browser that allows you to combine your favorite messaging services into one application.</p>
             <img alt={"Dashboard"} src={featureImage}/>
         </div>
