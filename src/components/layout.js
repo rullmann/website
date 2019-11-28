@@ -68,6 +68,11 @@ const Layout = ({children}) => (
                                                 Contact
                                             </Link>
                                         </li>
+                                        <li>
+                                            <a href="https://github.com/getferdi/ferdi/issues/new/choose">
+                                                GitHub
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
