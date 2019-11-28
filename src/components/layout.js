@@ -100,7 +100,7 @@ const Layout = ({children}) => (
                     </div>
 
                     <div className={"copyright"}>
-                        <p>Copyright {new Date().getFullYear()}, {` `} <a href="https://getferdi.com" title={"the Ferdi Team"}>the Ferdi Team</a>. All rights reserved.</p><br />
+                        <p>Copyright {new Date().getFullYear()}, {` `} <a href="https://github.com/orgs/getferdi/people" title={"the Ferdi Team"}>the Ferdi Team</a>. All rights reserved.</p><br />
                         <p>Franz and the Franz logo are trademarks or registered trademarks of Franz or Franz’s licensors.</p>
                         <p>GitHub and the GitHub logo are trademarks or registered trademarks of GitHub, Inc.</p>
                         <p>This website is not affiliate with Franz, GitHub or any messaging service shown.</p>
