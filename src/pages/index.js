@@ -12,7 +12,7 @@ import thumbnailMore from "../../static/images/feature-more.png"
 
 const IndexPage = () => (
     <Layout>
-        <SEO title="All your messaging services in one place"/>
+        <SEO />
 
         <div className={"page-header home"}>
             <h1>All your messaging services in one place</h1>
