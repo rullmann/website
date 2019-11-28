@@ -46,8 +46,8 @@ const AboutPage = () => (
                     <div className={"col-6"}>
                         <div className={"item"}>
                             <Icon.Lock className={"item-icon"} />
-                            <h3>Ferdi Lock</h3>
-                            <p>Protect your messages by using Ferdi Lock. Ferdi Lock allows you to lock your messages using a password.</p>
+                            <h3>Password Lock.</h3>
+                            <p>Protect your messages by using Password Lock. Password Lock Lock allows you to lock your messages using a password.</p>
                         </div>
                     </div>
                 </div>
