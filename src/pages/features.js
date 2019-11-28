@@ -47,7 +47,7 @@ const AboutPage = () => (
                         <div className={"item"}>
                             <Icon.Lock className={"item-icon"} />
                             <h3>Password Lock.</h3>
-                            <p>Protect your messages by using Password Lock. Password Lock Lock allows you to lock your messages using a password.</p>
+                            <p>Protect your messages by using Password Lock. Password Lock allows you to lock your messages using a password.</p>
                         </div>
                     </div>
                 </div>
