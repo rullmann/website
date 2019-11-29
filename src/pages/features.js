@@ -133,7 +133,7 @@ const AboutPage = () => (
                         <div className={"item"}>
                             <Icon.Moon className={"item-icon"} />
                             <h3>Dark Mode.</h3>
-                            <p>Protect your eyes and switch Ferdi to dark mode at night. This also works on all your services thanks to <a href="https://github.com/darkreader/darkreader" target="_blank" rel="noopener noreferrer">DarkReader</a>.</p>
+                            <p>Protect your eyes and switch Ferdi to Dark Mode at night. This also works on all your services thanks to <a href="https://github.com/darkreader/darkreader" target="_blank" rel="noopener noreferrer">DarkReader</a>.</p>
                         </div>
                     </div>
 
