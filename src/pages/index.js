@@ -83,7 +83,7 @@ const IndexPage = () => (
                                 <p>Ferdi ships with so many great features.</p>
                                 <div className={"button"}>
                                     <Link to="/features">
-                                        View Feature list
+                                        Browse Features
                                     </Link>
                                 </div>
                             </div>
