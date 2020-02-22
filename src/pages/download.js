@@ -22,7 +22,8 @@ class DownloadPage extends Component {
         this.setState({
             release: version,
             mac: `https://github.com/getferdi/ferdi/releases/download/v${version}/Ferdi-${version}.dmg`,
-            win: `https://github.com/getferdi/ferdi/releases/download/v${version}/Ferdi-Setup-${version}.exe`,
+            // win: `https://github.com/getferdi/ferdi/releases/download/v${version}/Ferdi-Setup-${version}.exe`,
+            win: `https://github.com/getferdi/ferdi/releases/download/v5.3.3/Ferdi.Setup.5.3.3.exe`,
             linuxAppImage: `https://github.com/getferdi/ferdi/releases/download/v${version}/Ferdi-${version}.AppImage`,
             linuxDeb: `https://github.com/getferdi/ferdi/releases/download/v${version}/ferdi_${version}_amd64.deb`,
             os,
