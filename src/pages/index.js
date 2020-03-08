@@ -37,6 +37,11 @@ const IndexPage = () => (
                                 <h2>Increase your productivity.</h2>
                                 <p>One Slack application, one WhatsApp application, keeping your WebMail open in the browser? Ferdi brings all your messaging services into one app.</p>
                             </div>
+                            <div className={"button"}>
+                                <Link to="/services">
+                                    Browse Services
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
