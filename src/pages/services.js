@@ -5,6 +5,9 @@ import fetch from 'node-fetch'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+// Test if the user is trying to search signal
+const isSearchingSignal = string => /^sig(n(al?)?)?/i.test(string);
+
 class ServicesPage extends Component {
   state = {
     services: [],
@@ -80,7 +83,19 @@ class ServicesPage extends Component {
                 {!shownServices.length && (
                   <div>
                     <p style={{ textAlign: 'center' }}>
-                      It looks like this service is not yet part of Ferdi - but you can still add it using the "Custom Website" option!
+                      {
+                        isSearchingSignal(query) 
+                        ? (
+                          <>
+                            Ferdi unfortunately doesn't support Signal at the moment as Signal doesn't offer a web version.
+                            <br />
+                            <br />
+                            However, if you want to use another service than Signal you can add it using the "Custom Website" option!
+                          </>
+                        )
+                        : 'It looks like this service is not yet part of Ferdi - but you can still add it using the "Custom Website" option!'
+                      }
+                      
                     </p>
                     <div className={"service-not-found-service"}>
                       <img 
@@ -91,7 +106,6 @@ class ServicesPage extends Component {
                     </div>
                   </div>
                 )}
-
             </div>
         </div>
       </Layout>
