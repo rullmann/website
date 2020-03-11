@@ -16,8 +16,16 @@ class ServicesPage extends Component {
     fetch('https://cdn.jsdelivr.net/gh/getferdi/recipes/all.json')
       .then(data => data.json())
       .then(services => {
+        // Sort services alphabetically
+        const sortedServices = services.sort((a, b) => {
+          const aName = a.name.toLowerCase();
+          const bName = b.name.toLowerCase();
+
+          return (aName < bName) ? -1 : (aName > bName) ? 1 : 0;
+        })
+
         this.setState({
-          services,
+          services: sortedServices,
         });
       })
   }
