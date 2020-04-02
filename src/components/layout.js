@@ -29,7 +29,7 @@ const Layout = ({children}) => (
             <footer>
                 <div className={"container"}>
                     <div className={"row"}>
-                        <div className={"col-5"}>
+                        <div className={"col-4"}>
                             <div className={"widget__item"}>
                                 <div className={"logo"}>
                                     <Link to="/" title={"Ferdi"}>
@@ -43,7 +43,7 @@ const Layout = ({children}) => (
                             </div>
                         </div>
 
-                        <div className={"col-2"}>
+                        <div className={"col-3"}>
                             <div className={"widget__item"}>
                                 <ul className={"links"}>
                                     <h4>Ferdi</h4>
@@ -51,14 +51,15 @@ const Layout = ({children}) => (
                                         <li><Link to="/" title={"Home"}>Home</Link></li>
                                         <li><Link to="/download" title={"Download"}>Download</Link></li>
                                         <li><Link to="/features" title={"Features"}>Features</Link></li>
-                                        <li><a href={"https://github.com/getferdi/ferdi"}>Open Source</a></li>
+                                        <li><Link to="/services" title={"Services"}>Services</Link></li>
+                                        <li><a href={"https://github.com/getferdi/ferdi"}>GitHub</a></li>
                                         <li><a href={"https://opencollective.com/getferdi"}>Open Collective</a></li>
                                     </ul>
                                 </ul>
                             </div>
                         </div>
 
-                        <div className={"col-2"}>
+                        <div className={"col-3"}>
                             <div className={"widget__item"}>
                                 <div className={"links"}>
                                     <h4>Support</h4>
@@ -69,13 +70,18 @@ const Layout = ({children}) => (
                                             </a>
                                         </li>
                                         <li>
+                                            <a href="https://api.getferdi.com/import">
+                                                Import your Franz Account
+                                            </a>
+                                        </li>
+                                        <li>
                                             <Link to="/contact">
-                                                Contact
+                                                Contact us
                                             </Link>
                                         </li>
                                         <li>
-                                            <a href="https://github.com/getferdi/ferdi/issues/new/choose">
-                                                GitHub
+                                            <a href="https://github.com/getferdi/ferdi/issues">
+                                                GitHub Issues
                                             </a>
                                         </li>
                                     </ul>
@@ -83,7 +89,7 @@ const Layout = ({children}) => (
                             </div>
                         </div>
 
-                        <div className={"col-2"}>
+                        <div className={"col-3"}>
                             <div className={"widget__item"}>
                                 <div className={"links"}>
                                     <h4>Legal</h4>
