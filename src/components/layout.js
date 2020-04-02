@@ -64,6 +64,11 @@ const Layout = ({children}) => (
                                     <h4>Support</h4>
                                     <ul>
                                         <li>
+                                            <a href="https://api.getferdi.com/user/account">
+                                                Manage your Account
+                                            </a>
+                                        </li>
+                                        <li>
                                             <Link to="/contact">
                                                 Contact
                                             </Link>
@@ -85,13 +90,23 @@ const Layout = ({children}) => (
                                     <ul>
                                         <li>
                                             <Link to="/terms">
-                                                Terms of Service
+                                                Terms of Service (Website)
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="/privacy">
-                                                Privacy policy
+                                                Privacy policy (Website)
                                             </Link>
+                                        </li>
+                                        <li>
+                                            <a href="https://api.getferdi.com/terms">
+                                                Terms of Service (Ferdi)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://api.getferdi.com/privacy.html">
+                                                Privacy policy (Ferdi)
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
