@@ -1,8 +1,17 @@
 import React, { Component } from "react"
 
+import fetch from 'node-fetch'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+    faApple,
+    faWindows,
+    faLinux,
+    faUbuntu,
+    faRedhat,
+} from '@fortawesome/free-brands-svg-icons'
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import fetch from 'node-fetch'
 
 class DownloadPage extends Component {
     state = {
@@ -24,8 +33,10 @@ class DownloadPage extends Component {
             mac: `https://github.com/getferdi/ferdi/releases/download/v${version}/Ferdi-${version}.dmg`,
             // win: `https://github.com/getferdi/ferdi/releases/download/v${version}/Ferdi-Setup-${version}.exe`,
             win: `https://github.com/getferdi/ferdi/releases/download/v5.3.3/Ferdi.Setup.5.3.3.exe`,
+            winPortable: `https://github.com/getferdi/ferdi/releases/download/v${version}/Ferdi-${version}.exe`,
             linuxAppImage: `https://github.com/getferdi/ferdi/releases/download/v${version}/Ferdi-${version}.AppImage`,
             linuxDeb: `https://github.com/getferdi/ferdi/releases/download/v${version}/ferdi_${version}_amd64.deb`,
+            linuxRpm: `https://github.com/getferdi/ferdi/releases/download/v${version}/ferdi_${version}.x86_64.rpm`,
             os,
         });
     }
@@ -73,8 +84,10 @@ class DownloadPage extends Component {
             release,
             mac,
             win,
+            winPortable,
             linuxAppImage,
             linuxDeb,
+            linuxRpm,
             os,
         } = this.state;
 
@@ -108,12 +121,22 @@ class DownloadPage extends Component {
                         <div className={"row"}>
                             <div className={"col-6"}>
                                 <div className={"download-button"}>
-                                    <a href={win}>Download for Windows</a>
+                                    <a href={win}>
+                                        <span>
+                                            <FontAwesomeIcon icon={faWindows} />
+                                            Download for Windows
+                                        </span>
+                                    </a>
                                 </div>
                             </div>
                             <div className={"col-6"}>
                                 <div className={"download-button"}>
-                                    <a href={mac}>Download for Mac</a>
+                                    <a href={winPortable}>
+                                        <span>
+                                            <FontAwesomeIcon icon={faWindows} />
+                                            Download Windows Portable
+                                        </span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -121,16 +144,60 @@ class DownloadPage extends Component {
                         <div className={"row"}>
                             <div className={"col-6"}>
                                 <div className={"download-button"}>
-                                    <a href={linuxAppImage}>Download Linux AppImage</a>
+                                    <a href={mac}>
+                                        <span>
+                                            <FontAwesomeIcon icon={faApple} />
+                                            Download for Mac
+                                        </span>
+                                    </a>
                                 </div>
                             </div>
                             <div className={"col-6"}>
                                 <div className={"download-button"}>
-                                    <a href={linuxDeb}>Download for Ubuntu (.deb)</a>
+                                    <a href={linuxAppImage}>
+                                        <span>
+                                            <FontAwesomeIcon icon={faLinux} />
+                                            Download Linux AppImage
+                                        </span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        
+
+                        <div className={"row"}>
+                            <div className={"col-6"}>
+                                <div className={"download-button"}>
+                                    <a href={linuxDeb}>
+                                        <span>
+                                            <FontAwesomeIcon icon={faUbuntu} />
+                                            Download for Ubuntu (.deb)
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className={"col-6"}>
+                                <div className={"download-button"}>
+                                    <a href={linuxRpm}>
+                                        <span>
+                                            <FontAwesomeIcon icon={faRedhat} />
+                                            Download RPM
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 className={"download-all"}>or</h2>
+
+                        <h4>Install with Homebrew</h4>
+                        <pre className={"command"}>
+                            $ brew cask install ferdi
+                        </pre>
+
+                        <h4>Install AUR package</h4>
+                        <pre className={"command"}>
+                            $ yay -S ferdi
+                        </pre>
                     </div>
                 </div>
             </Layout>
