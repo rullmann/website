@@ -1,0 +1,75 @@
+.testimonials {
+  .arrow {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    transition: all .25s ease-in;
+    border: 0;
+    opacity: 0.4;
+    cursor: pointer;
+    top: 0;
+    background-color: #FFFFFF;
+
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      opacity: 1;
+    }
+    &.arrow-left {
+      left: 0;
+    }
+    &.arrow-right {
+      right: 0;
+    }
+  }
+  
+  .carousel {
+    .slide {
+      background-color: #FFFFFF;
+    }
+    .control-dots {
+      position: relative;
+      .dot {
+        background: #212120;
+        box-shadow: none;
+      }
+    }
+
+    .control-next.control-arrow:before {
+      border-left: 8px solid #212121;
+    }
+    .control-prev.control-arrow:before {
+      border-right: 8px solid #212121;
+    }
+  }
+
+  .testimonials-item {
+    padding: 0 3rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    p {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 35px;
+    }
+
+    .testimonials-user {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      font-weight: 500;
+
+      .testimonials-icon {
+        width: 29px;
+        height: 29px;
+        margin-right: 1rem;
+        border-radius: 29px;
+      }
+    }
+
+  }
+}

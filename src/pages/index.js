@@ -4,11 +4,16 @@ import * as Icon from 'react-feather';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Testimonials from '../components/testimonials'
 import featureImage from "../../static/images/hero.png";
 import thumbnailServices from "../../static/images/feature-services.png"
 import thumbnailFranz from "../../static/images/feature-franz.png"
 import thumbnailRestrictions from "../../static/images/feature-restrictions.png"
 import thumbnailMore from "../../static/images/feature-more.png"
+import testimonialChipde from "../../static/images/testimonials/chipde.png"
+import testimonialMakeuseof from "../../static/images/testimonials/makeuseof.png"
+import testimonialSandromatter from "../../static/images/testimonials/sandromatter.jpg"
+import testimonialJakelee from "../../static/images/testimonials/jakelee.jpeg"
 
 const IndexPage = () => (
     <Layout>
@@ -103,6 +108,31 @@ const IndexPage = () => (
                 </div>
             </div>
         </div>
+
+        <Testimonials
+            slides={[
+                {
+                    text: 'Ferdi offers no restrictions and no additional features that are subject to a fee. A real download tip!',
+                    logo: testimonialChipde,
+                    name: 'Chip.de'
+                },
+                {
+                    text: 'You can concentrate all of your messaging applications in a single messaging browser, instead of having numerous taskbar and system tray icons.',
+                    logo: testimonialMakeuseof,
+                    name: 'MakeUseOf.com'
+                },
+                {
+                    text: 'To put it simply: I love Ferdi. It does exactly what I want to, costs nothing, lets me keep my privacy.',
+                    logo: testimonialJakelee,
+                    name: 'Jake Lee'
+                },
+                {
+                    text: 'Since the lessons at the university are digital I use Ferdi, the all-in-one messenger app.',
+                    logo: testimonialSandromatter,
+                    name: 'Sandro Matter'
+                },
+            ]}
+        />
 
         <div className={"call-to-action"}>
             <div className={"container"}>
