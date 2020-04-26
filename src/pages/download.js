@@ -25,14 +25,13 @@ class DownloadPage extends Component {
 
     componentDidMount() {
         // const version = await this.getLatestRelease();
-        const version = '5.4.3';
+        const version = '5.5.0';
         const os = this.getOS();
 
         this.setState({
             release: version,
             mac: `https://github.com/getferdi/ferdi/releases/download/v${version}/Ferdi-${version}.dmg`,
-            // win: `https://github.com/getferdi/ferdi/releases/download/v${version}/Ferdi-Setup-${version}.exe`,
-            win: `https://github.com/getferdi/ferdi/releases/download/v5.3.3/Ferdi.Setup.5.3.3.exe`,
+            win: `https://github.com/getferdi/ferdi/releases/download/v${version}/Ferdi-Setup-${version}.exe`,
             winPortable: `https://github.com/getferdi/ferdi/releases/download/v${version}/Ferdi-${version}.exe`,
             linuxAppImage: `https://github.com/getferdi/ferdi/releases/download/v${version}/Ferdi-${version}.AppImage`,
             linuxDeb: `https://github.com/getferdi/ferdi/releases/download/v${version}/ferdi_${version}_amd64.deb`,
