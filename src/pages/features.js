@@ -210,7 +210,7 @@ const AboutPage = () => (
                         <div className={"item"}>
                             <Icon.Cpu className={"item-icon"} />
                             <h3>Cross-platform.</h3>
-                            <p>Being build on ElectronJS, Ferdi is compatible with Windows, Mac and Linux.</p>
+                            <p>Being built on ElectronJS, Ferdi is compatible with Windows, Mac and Linux.</p>
                         </div>
                     </div>
                 </div>
