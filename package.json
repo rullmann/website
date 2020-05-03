@@ -39,6 +39,7 @@
   "license": "MIT",
   "scripts": {
     "deploy": "gatsby build && cp ./CNAME public/ && gh-pages -d public",
+    "ci-deploy": "gatsby build && cp ./CNAME public/ && gh-pages -d public -r https://$GH_TOKEN@github.com/getferdi/website.git",
     "build": "gatsby build --output-dir",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
