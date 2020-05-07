@@ -29,7 +29,7 @@ const Layout = ({children}) => (
             <footer>
                 <div className={"container"}>
                     <div className={"row"}>
-                        <div className={"col-4"}>
+                        <div className={"col-3"}>
                             <div className={"widget__item"}>
                                 <div className={"logo"}>
                                     <Link to="/" title={"Ferdi"}>
