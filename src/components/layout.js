@@ -65,6 +65,11 @@ const Layout = ({children}) => (
                                     <h4>Support</h4>
                                     <ul>
                                         <li>
+                                            <a href="https://help.getferdi.com">
+                                                Help Center
+                                            </a>
+                                        </li>
+                                        <li>
                                             <a href="https://api.getferdi.com/user/account">
                                                 Manage your Account
                                             </a>
@@ -73,11 +78,6 @@ const Layout = ({children}) => (
                                             <a href="https://api.getferdi.com/import">
                                                 Import your Franz Account
                                             </a>
-                                        </li>
-                                        <li>
-                                            <Link to="/contact">
-                                                Contact us
-                                            </Link>
                                         </li>
                                         <li>
                                             <a href="https://github.com/getferdi/ferdi/issues">

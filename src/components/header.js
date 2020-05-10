@@ -13,6 +13,12 @@ const Header = ({siteTitle}) => (
                     </Link>
                 </div>
 
+                <div className={"menu-links"}>
+                    <Link to="/services">Services</Link>
+                    <Link to="/features">Features</Link>
+                    <a href="https://help.getferdi.com">Help Center</a>
+                </div>
+
                 <div className={"get-started"}>
                     <Link to="/download">Download</Link>
                 </div>
